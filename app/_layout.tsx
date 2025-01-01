@@ -1,8 +1,7 @@
-import "../global.css"
-import { View } from 'react-native'
-import { Stack } from 'expo-router';
-import { Header } from '../components/Header';
-import { Logo } from '../components/Logo';
+import "../global.css";
+import { View } from "react-native";
+import { Stack } from "expo-router";
+import { Logo } from "../components/Logo";
 
 export default function Layout() {
   return (
@@ -10,12 +9,11 @@ export default function Layout() {
     <View className="flex-1 bg-[#080c0f]">
       <Stack
         screenOptions={{
-          headerStyle: { backgroundColor: '#080c0f' },
-          headerTintColor: '#080c0f',
+          headerStyle: { backgroundColor: "#080c0f" },
+          headerTintColor: "#080c0f",
           headerTitle: () => (
-            <View className="pt-2 items-center">
+            <View className="mt-5 mb-5 w-full items-center">
               <Logo />
-              <Header />
             </View>
           ),
         }}

@@ -10,6 +10,7 @@ export default function TabsLayout() {
         tabBarIconStyle: { height: "100%" },
         tabBarStyle: {
           backgroundColor: "#152028",
+          borderTopWidth: 0,
           borderRadius: 8,
           position: "absolute", // Asegura que no haya fondo detrás
           bottom: 0, // Opcional: separa el tabBar de los bordes

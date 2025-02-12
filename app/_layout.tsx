@@ -1,5 +1,6 @@
 import "../global.css";
 import { View } from "react-native";
+import { StatusBar } from "expo-status-bar";
 import { Stack } from "expo-router";
 import { Logo } from "../components/Logo";
 
@@ -7,6 +8,7 @@ export default function Layout() {
   return (
     // <View className="flex-1 items-center justify-center bg-[#080c0f]">
     <View className="flex-1 bg-[#080c0f]">
+      <StatusBar style="light" />
       <Stack
         screenOptions={{
           headerStyle: { backgroundColor: "#080c0f" },
